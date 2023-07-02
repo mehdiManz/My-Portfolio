@@ -6,7 +6,7 @@ body {
 }
 
 #navbarNav {
-  margin-right: 300px;
+  margin-right: 20px; /* Adjust the margin to reduce the space on mobile */
 }
 
 body > nav {
@@ -22,7 +22,7 @@ body {
 .navbar-brand {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   transition: all 0.3s;
-  margin-left: 300px !important;
+  margin-left: 20px !important; /* Adjust the margin to reduce the space on mobile */
 }
 
 .navbar-dark {
@@ -43,9 +43,8 @@ body {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh; /* Use min-height to ensure the section takes up the full height */
   transition: background-color 0.3s ease;
-  
 }
 
 #my-name {
@@ -232,5 +231,5 @@ section {
 }
 
 #portfolio > div.container.col-lg-4.col-md-6.mb-4 > h1 {
-  margin-bottom: 100px;
+  margin-bottom: 50px; /* Reduce the margin for better spacing on mobile */
 }
