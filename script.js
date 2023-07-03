@@ -41,6 +41,8 @@ $(document).ready(function() {
   }
 });
 
+
+
 // Handle form submission
 document.getElementById("contactForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Prevent form from submitting
@@ -67,4 +69,29 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 });
 
 
+
+
+
+
+
+var whatIDoSection = document.getElementById("what-i-do");
+var textElements = document.querySelectorAll("#what-i-do > div > div > div > div > p");
+
+function handleIntersection(entries) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      textElements.forEach(function (textElement) {
+        textElement.style.animation = "changeTextColor 1s 1s forwards";
+      });
+    } else {
+      textElements.forEach(function (textElement) {
+        textElement.style.animation = "none";
+        textElement.style.color = "#ffffff";
+      });
+    }
+  });
+}
+
+var intersectionObserver = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+intersectionObserver.observe(whatIDoSection);
 
