@@ -75,7 +75,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
 
 var whatIDoSection = document.getElementById("what-i-do");
-var textElements = document.querySelectorAll("#what-i-do > div > div > div > div > p");
+var textElements = document.querySelectorAll(".animated-text");
 
 function handleIntersection(entries) {
   entries.forEach(function (entry) {
@@ -94,4 +94,3 @@ function handleIntersection(entries) {
 
 var intersectionObserver = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
 intersectionObserver.observe(whatIDoSection);
-
