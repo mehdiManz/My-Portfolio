@@ -3,7 +3,9 @@
 body {
   background-color: #000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  height: auto;
 }
+
 
 #navbarNav {
   margin-right: 20px; /* Adjust the margin to reduce the space on mobile */
