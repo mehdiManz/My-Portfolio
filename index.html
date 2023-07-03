@@ -22,33 +22,34 @@
   
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
 
-    <a class="navbar-brand" href="#my-name">Mehdi Abdolnabi Zadeh</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#my-name" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Welcome to my website!" onclick="hideTooltips(this)">Mehdi Abdolnabi Zadeh</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Toggle the navigation menu" onclick="hideTooltips(this)"> 
       <span class="navbar-toggler-icon"></span>
     </button>
-    
+  
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#what-i-do">WHAT I DO</a>
+          <a class="nav-link" href="#what-i-do" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn more about my skills and expertise" onclick="hideTooltips(this)">WHAT I DO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">ABOUT</a>
+          <a class="nav-link" href="#about" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Get to know more about me" onclick="hideTooltips(this)">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+          <a class="nav-link" href="#portfolio" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Explore my portfolio of projects" onclick="hideTooltips(this)">PORTFOLIO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">CONTACT</a>
+          <a class="nav-link" href="#contact" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contact me" onclick="hideTooltips(this)">CONTACT</a>
         </li>
       </ul>
     </div>
   </nav>
   
 
+  
 
 
 
@@ -60,7 +61,7 @@
             <span class="brand-text">Front-end</span> &amp; Back-end Developer
           </h1>
           <h2 class="intro-subheading">Computer Technician</h2>
-          <a href="#what-i-do" class="btn btn-primary btn-lg custom-button">Tell Me More</a>
+          <a href="#what-i-do" class="btn btn-primary btn-lg custom-button" id="tell-me-more" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click to learn more about my skills and expertise">Tell Me More</a>
         </div>
       </div>
     </div>
@@ -170,7 +171,9 @@
       <div class="card mb-4" order="1">
         <img src="tinDog.png" alt="Image 1" class="card-img-top">
         <div class="card-body">
-          <h3 class="card-title"><a href="https://github.com/mehdiManz/tinDog" target="_blank"> tinDog</a> </h3>
+          <h3 class="card-title"> <a href="https://github.com/mehdiManz/tinDog" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="A responsive web application for connecting dog owners">tinDog</a>
+
+          </h3>
           
         </div>
       </div>
@@ -179,7 +182,7 @@
       <div class="card mb-4" order="2">
         <img src="Screenshot 2023-06-30 123842.png" alt="Image 2" class="card-img-top">
         <div class="card-body">
-          <h3 class="card-title"><a href="https://github.com/mehdiManz/drum-kit" target="_blank">   Drum Kit </a></h3>
+          <h3 class="card-title"> <a href="https://github.com/mehdiManz/drum-kit" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="An interactive virtual drum kit built with JavaScript">Drum Kit</a></h3>
          
         </div>
       </div>
@@ -191,7 +194,8 @@
       <div class="card mb-4" order="3">
         <img src="Screenshot 2023-07-03 104803.png" alt="Image 3" class="card-img-top">
         <div class="card-body">
-          <h3 class="card-title"> <a href="https://github.com/mehdiManz/youtube-clone" target="_blank"> YouTube Project</a> </h3>
+          <h3 class="card-title"> <a href="https://github.com/mehdiManz/youtube-clone" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="A YouTube clone web application">YouTube Project</a>
+
           <p class="card-text"></p>
         </div>
       </div>
@@ -205,7 +209,8 @@
       <div class="card mb-4" order="4">
         <img src="Screenshot 2023-07-01 140748.png" alt="Image 4" class="card-img-top">
         <div class="card-body">
-          <h3 class="card-title"><a href="https://github.com/mehdiManz/weather-forecast-express" target="_blank">Weather Forecast with Express</a> </h3>
+          <h3 class="card-title"><a href="https://github.com/mehdiManz/weather-forecast-express" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="A weather forecast web application built with Express">Weather Forecast with Express</a>
+          </h3>
           <p class="card-text"></p>
         </div>
       </div>
@@ -215,7 +220,8 @@
       <div class="card mb-4" order="5">
         <img src="Screenshot 2023-07-01 133912.png" alt="Image 5" class="card-img-top">
         <div class="card-body">
-          <h3 class="card-title"> <a href="https://github.com/mehdiManz/react-emoji" target="_blank">React Emoji</a></h3>
+          <h3 class="card-title"> <a href="https://github.com/mehdiManz/react-emoji" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="A React component library for displaying emojis">React Emoji</a>
+          </h3>
          
         </div>
       </div>
@@ -225,7 +231,8 @@
       <div class="card mb-4" order="6">
         <img src="Screenshot 2023-07-01 133535.png" alt="Image 6" class="card-img-top">
         <div class="card-body">
-          <h3 class="card-title"> <a href="https://github.com/mehdiManz/react-prop" target="_blank"> React Props</a></h3>
+          <h3 class="card-title"> <a href="https://github.com/mehdiManz/react-prop" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="A project showcasing the usage of props in React">React Props</a>
+          </h3>
        
         </div>
       </div>
@@ -236,7 +243,8 @@
       <div class="card mb-4" order="7">
         <img src="Screenshot 2023-07-01 084307.png" alt="Image 7" class="card-img-top">
         <div class="card-body">
-          <h3 class="card-title"> <a href="https://github.com/mehdiManz/daily-journal" target="_blank">Daily Journal</a> </h3>
+          <h3 class="card-title"><a href="https://github.com/mehdiManz/daily-journal" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="A daily journal web application">Daily Journal</a>
+          </h3>
         
         </div>
       </div>
@@ -246,7 +254,8 @@
       <div class="card mb-4" order="8">
         <img src="Screenshot 2023-06-30 132426.png" alt="Image 8" class="card-img-top">
         <div class="card-body">
-          <h3 class="card-title"> <a href="https://github.com/mehdiManz/dice-challenge" target="_blank">Dice Challenge</a> </h3>
+          <h3 class="card-title"> <a href="https://github.com/mehdiManz/dice-challenge" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="A dice rolling game challenge">Dice Challenge</a>
+          </h3>
          
         </div>
       </div>
@@ -256,7 +265,8 @@
       <div class="card mb-4" order="9">
         <img src="Screenshot 2023-06-30 132222.png" alt="Image 9" class="card-img-top">
         <div class="card-body">
-          <h3 class="card-title"><a href="https://github.com/mehdiManz/pin-bar-prophet" target="_blank">Forex Prophet Pin Bar Detector</a> </h3>
+          <h3 class="card-title"><a href="https://github.com/mehdiManz/pin-bar-prophet" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="A Forex trading tool for detecting pin bar patterns">Forex Prophet Pin Bar Detector</a>
+          </h3>
           
         </div>
       </div>
@@ -266,7 +276,8 @@
       <div class="card mb-4" order="10">
         <img src="Screenshot 2023-06-30 131619.png" alt="Image 10" class="card-img-top">
         <div class="card-body">
-          <h3 class="card-title"> <a href="https://github.com/mehdiManz/Newsletter-Signup" target="_blank">Newsletter Signup</a></h3>
+          <h3 class="card-title"> <a href="https://github.com/mehdiManz/Newsletter-Signup" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="A newsletter signup form for capturing user information">Newsletter Signup</a>
+          </h3>
           <p class="card-text"></p>
         </div>
       </div>
@@ -276,7 +287,8 @@
       <div class="card mb-4" order="11">
         <img src="Screenshot 2023-06-30 130328.png" alt="Image 11" class="card-img-top">
         <div class="card-body">
-          <h3 class="card-title"><a href="https://github.com/mehdiManz/todo-mongoose" target="_blank">Todo App with Mongoose</a> </h3>
+          <h3 class="card-title"><a href="https://github.com/mehdiManz/todo-mongoose" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="A Todo application built with Mongoose">Todo App with Mongoose</a>
+          </h3>
          
         </div>
       </div>
@@ -287,7 +299,8 @@
       <div class="card mb-4" order="12">
         <img src="Screenshot 2023-06-30 125516.png" alt="Image 12" class="card-img-top">
         <div class="card-body">
-          <h3 class="card-title"> <a href="https://github.com/mehdiManz/static-todo-list" target="_blank">My Todo List</a> </h3>
+          <h3 class="card-title"> <a href="https://github.com/mehdiManz/static-todo-list" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="A simple static Todo List application">My Todo List</a>
+          </h3>
           <p class="card-text"></p>
         </div>
       </div>
