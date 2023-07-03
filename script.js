@@ -66,7 +66,11 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
   // Optionally, display a confirmation message
   alert("Thank you for your message. We will get back to you soon.");
+
+  // Reset the form fields
+  document.getElementById("contactForm").reset();
 });
+
 
 
 
