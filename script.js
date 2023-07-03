@@ -94,3 +94,28 @@ function handleIntersection(entries) {
 
 var intersectionObserver = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
 intersectionObserver.observe(whatIDoSection);
+
+
+
+// Select the navigation links
+var navLinks = document.querySelectorAll("body > nav > a, #navbarNav > ul > li:nth-child(2) > a, #navbarNav > ul > li:nth-child(3) > a, #navbarNav > ul > li:nth-child(4) > a, #navbarNav > ul > li:nth-child(5) > a");
+
+// Add event listeners for hover effect
+navLinks.forEach(function (link) {
+  link.addEventListener("mouseenter", function () {
+    this.style.color = "#ff5500";
+    this.style.transition = "color 0.3s ease";
+    this.style.transform = "scale(1.05)";
+  });
+
+  link.addEventListener("mouseleave", function () {
+    this.style.color = "";
+    this.style.transition = "";
+    this.style.transform = "";
+  });
+});
+
+
+
+
+
