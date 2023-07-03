@@ -55,14 +55,33 @@ section {
 }
 
 #what-i-do {
+ 
   background-color: #0a4d68;
   color: #ffffff;
   padding: 50px;
   text-align: center;
+  height: auto;
+  
+
+  
 }
+@keyframes changeTextColor {
+  0% {
+    color: #ffffff;
+  }
+  100% {
+    color: #04c7f8;
+  }
+}
+
+#what-i-do > div > div > div > div > p {
+  color: #ffffff;
+}
+
 
 #what-i-do h2 {
   color: #ff5500;
+
 }
 
 #about {
@@ -169,6 +188,7 @@ section {
 
 #what-i-do h4 {
   color: #d1d1d1;
+ 
 }
 
 .portfolio-item img {
@@ -233,3 +253,5 @@ section {
 #portfolio > div.container.col-lg-4.col-md-6.mb-4 > h1 {
   margin-bottom: 50px; /* Reduce the margin for better spacing on mobile */
 }
+
+
