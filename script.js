@@ -41,6 +41,30 @@ $(document).ready(function() {
   }
 });
 
+// Handle form submission
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form from submitting
+
+  // Get form data
+  var name = document.getElementsByName("name")[0].value;
+  var email = document.getElementsByName("email")[0].value;
+  var message = document.getElementsByName("message")[0].value;
+
+  // Compose email message
+  var subject = "New Message from Contact Form";
+  var body = "Name: " + name + "\nEmail: " + email + "\n\n" + message;
+
+  // Compose mailto link
+  var mailtoLink = "mailto:mehdimaanz@gmail.com" +
+    "?subject=" + encodeURIComponent(subject) +
+    "&body=" + encodeURIComponent(body);
+
+  // Open email client
+  window.location.href = mailtoLink;
+
+  // Optionally, display a confirmation message
+  alert("Thank you for your message. We will get back to you soon.");
+});
 
 
 
