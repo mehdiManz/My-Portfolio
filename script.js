@@ -101,6 +101,12 @@ intersectionObserver.observe(whatIDoSection);
 
 
 
+///////////////////////////////////
+
+
+
+
+
 // Select the navigation links
 var navLinks = document.querySelectorAll("body > nav > a, #navbarNav > ul > li:nth-child(2) > a, #navbarNav > ul > li:nth-child(3) > a, #navbarNav > ul > li:nth-child(4) > a, #navbarNav > ul > li:nth-child(5) > a");
 
@@ -121,5 +127,23 @@ navLinks.forEach(function (link) {
 
 
 
+  function hideTooltips(element) {
+    $('[data-bs-toggle="tooltip"]').tooltip('hide');
+    $(element).mouseleave(function() {
+      $('[data-bs-toggle="tooltip"]').tooltip('hide');
+    });
+  }
 
+  $(document).ready(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip();
+  });
 
+ // Enable tooltips
+ $(document).ready(function() {
+  $('[data-bs-toggle="tooltip"]').tooltip();
+  
+  // Hide tooltip when the button is clicked
+  $('#tell-me-more').on('click', function() {
+    $(this).tooltip('hide');
+  });
+});
