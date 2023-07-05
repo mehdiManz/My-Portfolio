@@ -270,7 +270,7 @@ section {
 
 
 /* Custom CSS for tooltips */
-.project-link {
+/* .project-link {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -294,6 +294,6 @@ section {
 .project-link:hover::before,
 .project-link:focus::before {
   opacity: 1;
-}
+} */
 
 
