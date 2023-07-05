@@ -128,45 +128,45 @@ navLinks.forEach(function (link) {
 
 
 
-  function hideTooltips(element) {
-    $('[data-bs-toggle="tooltip"]').tooltip('hide');
-    $(element).mouseleave(function() {
-      $('[data-bs-toggle="tooltip"]').tooltip('hide');
-    });
-  }
+//   function hideTooltips(element) {
+//     $('[data-bs-toggle="tooltip"]').tooltip('hide');
+//     $(element).mouseleave(function() {
+//       $('[data-bs-toggle="tooltip"]').tooltip('hide');
+//     });
+//   }
 
-  $(document).ready(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip();
-  });
+//   $(document).ready(function () {
+//     $('[data-bs-toggle="tooltip"]').tooltip();
+//   });
 
- // Enable tooltips
- $(document).ready(function() {
-  $('[data-bs-toggle="tooltip"]').tooltip();
+//  // Enable tooltips
+//  $(document).ready(function() {
+//   $('[data-bs-toggle="tooltip"]').tooltip();
   
-  // Hide tooltip when the button is clicked
-  $('#tell-me-more').on('click', function() {
-    $(this).tooltip('hide');
-  });
-});
+//   // Hide tooltip when the button is clicked
+//   $('#tell-me-more').on('click', function() {
+//     $(this).tooltip('hide');
+//   });
+// });
 
 
 
 
 
-$(document).ready(function () {
-  // Enable tooltips
-  $('[data-bs-toggle="tooltip"]').tooltip();
+// $(document).ready(function () {
+//   // Enable tooltips
+//   $('[data-bs-toggle="tooltip"]').tooltip();
 
-  // Hide tooltips when project links in the portfolio section are clicked
-  $('#portfolio .card-body a').on('click', function () {
-    $(this).tooltip('hide');
-  });
+//   // Hide tooltips when project links in the portfolio section are clicked
+//   $('#portfolio .card-body a').on('click', function () {
+//     $(this).tooltip('hide');
+//   });
 
-  // Hide tooltips when the "Tell Me More" button is clicked
-  $('#tell-me-more').on('click', function () {
-    $(this).tooltip('hide');
-  });
-});
+//   // Hide tooltips when the "Tell Me More" button is clicked
+//   $('#tell-me-more').on('click', function () {
+//     $(this).tooltip('hide');
+//   });
+// });
 
 
 
