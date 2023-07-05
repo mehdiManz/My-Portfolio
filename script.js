@@ -147,3 +147,29 @@ navLinks.forEach(function (link) {
     $(this).tooltip('hide');
   });
 });
+
+
+
+
+
+$(document).ready(function () {
+  // Enable tooltips
+  $('[data-bs-toggle="tooltip"]').tooltip();
+
+  // Hide tooltips when project links in the portfolio section are clicked
+  $('#portfolio .card-body a').on('click', function () {
+    $(this).tooltip('hide');
+  });
+
+  // Hide tooltips when the "Tell Me More" button is clicked
+  $('#tell-me-more').on('click', function () {
+    $(this).tooltip('hide');
+  });
+});
+
+
+
+
+
+
+
