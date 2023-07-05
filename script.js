@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
   // Smooth scrolling animation for nav links
   $('a.nav-link[href^="#"]').on('click', function(event) {
