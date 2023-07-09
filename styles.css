@@ -1,4 +1,4 @@
-
+/* Add custom styles here */
 
 body {
   background-color: #000;
@@ -36,6 +36,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #000200e1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 2px 10px rgba(0, 0, 0, 0.08);
  
 /* background-image: url("https://www.transparenttextures.com/patterns/first-aid-kit.png"); */
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -67,6 +68,18 @@ section {
   padding: 50px;
   text-align: center;
   height: auto;
+}
+
+@keyframes fab {
+  0% {
+   color: white;
+  }
+  100% {
+    color: #ff5500;
+  }
+}
+.fab{
+  color: white;
 }
 
 
@@ -274,9 +287,9 @@ section {
   position: relative;
   display: inline-block;
   cursor: pointer;
-}
+} */
 
-.project-link::before {
+/* .project-link::before {
   content: attr(data-tooltip);
   position: absolute;
   top: -2.5rem;
@@ -288,10 +301,10 @@ section {
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
+} */
 
 
-.project-link:hover::before,
+/* .project-link:hover::before,
 .project-link:focus::before {
   opacity: 1;
 } */
