@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <link rel="stylesheet" href="styles.css">
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 
-  
- 
- 
+
+
+
 </head>
+
 <body>
   
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
 
-    <a class="navbar-brand" href="#my-name">Mehdi Abdolnabi Zadeh</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#my-name" data-bs-placement="bottom" title="" onclick="hideTooltips(this)">Mehdi
+      Abdolnabi Zadeh</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="tooltip"
+      data-bs-placement="bottom" title="Toggle the navigation menu" onclick="hideTooltips(this)">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          
+
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#what-i-do">WHAT I DO</a>
+          <a class="nav-link" href="#what-i-do" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
+            onclick="hideTooltips(this)">WHAT I DO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">ABOUT</a>
+          <a class="nav-link" href="#about" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
+            onclick="hideTooltips(this)">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+          <a class="nav-link" href="#portfolio" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
+            onclick="hideTooltips(this)">PORTFOLIO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">CONTACT</a>
+          <a class="nav-link" href="#contact" data-bs-toggle="tooltip" data-bs-placement="bottom" title=""
+            onclick="hideTooltips(this)">CONTACT</a>
         </li>
       </ul>
     </div>
   </nav>
-  
+
+
 
 
 
@@ -59,88 +70,106 @@
             <span class="brand-text">Front-end</span> &amp; Back-end Developer
           </h1>
           <h2 class="intro-subheading">Computer Technician</h2>
-          <a href="#what-i-do" class="btn btn-primary btn-lg custom-button">Tell Me More</a>
+          <a href="#what-i-do" class="btn btn-primary btn-lg custom-button" id="tell-me-more" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" title="">Tell Me More</a>
         </div>
       </div>
     </div>
   </section>
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
   <section id="what-i-do" style="display: flex; justify-content: center; align-items: center; margin: 100px auto;">
     <div class="container">
       <h1 class="mb-5" style="color: #ff5500;">Skills and Expertise</h1>
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="skill-card">
-            <h4><i class="fab fa-html5"></i> HTML Proficiency</h4>
-            <p>Create visually appealing and well-structured web pages with expertise in HTML.</p>
+            <h4><i class="fab fa-html5 " style="color: rgb(255, 94, 0);"></i>
+              </i> HTML Proficiency</h4>
+            <p class="animated-text">Create visually appealing and well-structured web pages with expertise in HTML.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="skill-card">
-            <h4><i class="fab fa-css3-alt"></i> CSS Styling and Design</h4>
-            <p>Elevate web designs with innovative CSS styling techniques and meticulous attention to detail.</p>
+            <h4><i class="fab fa-css3-alt" style="color: rgb(0, 55, 126);"></i> CSS Styling and Design</h4>
+            <p class="animated-text">Elevate web designs with innovative CSS styling techniques and meticulous attention
+              to detail.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="skill-card">
-            <h4><i class="fab fa-js"></i> Interactive JavaScript Development</h4>
-            <p>Bring websites to life with dynamic and interactive features using advanced JavaScript expertise.</p>
+            <h4><i class="fab fa-js" style="color: yellow;"></i></i> Interactive JavaScript Development</h4>
+            <p class="animated-text">Bring websites to life with dynamic and interactive features using advanced
+              JavaScript expertise.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="skill-card">
-            <h4><i class="fab fa-node"></i> Node.js and Server-Side Applications</h4>
-            <p>Build powerful server-side applications and APIs using Node.js to efficiently handle data and user requests.</p>
+            <h4><i class="fab fa-node" style="color: rgb(61, 234, 3);"></i>
+              </i> Node.js and Server-Side Applications</h4>
+            <p class="animated-text">Build powerful server-side applications and APIs using Node.js to efficiently
+              handle data and user requests.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="skill-card">
-            <h4><i class="fab fa-react"></i> React for Dynamic UIs</h4>
-            <p>Develop engaging and dynamic user interfaces and web applications using React to enhance user experiences.</p>
+            <h4><i class="fab fa-react" style="color: #61DAFB;"></i>
+              </i> React for Dynamic UIs</h4>
+            <p class="animated-text">Develop engaging and dynamic user interfaces and web applications using React to
+              enhance user experiences.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="skill-card">
-            <h4><i class="fas fa-database"></i> Data Management with MongoDB</h4>
-            <p>Efficiently work with MongoDB to store and retrieve data for web applications.</p>
+            <h4><i class="fas fa-database" style="color: #140802;"></i>
+              </i>
+              </i>
+              </i> Data Management with MongoDB</h4>
+            <p class="animated-text">Efficiently work with MongoDB to store and retrieve data for web applications.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="skill-card">
-            <h4><i class="fas fa-cogs"></i> RESTful API Development</h4>
-            <p>Design scalable and robust RESTful APIs to enable seamless communication between frontend and backend systems.</p>
+            <h4><i class="fas fa-cogs" style="color: #36041c;"></i>
+              </i> RESTful API Development</h4>
+            <p class="animated-text">Design scalable and robust RESTful APIs to enable seamless communication between
+              frontend and backend systems.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="skill-card">
-            <h4><i class="fab fa-bootstrap"></i> Responsive Web Design with Bootstrap</h4>
-            <p>Implement visually appealing and adaptable web interfaces using Bootstrap for seamless user experiences.</p>
+            <h4><i class="fab fa-bootstrap" style="color: #4a08ae;"></i>
+              </i> Responsive Web Design with Bootstrap</h4>
+            <p class="animated-text">Implement visually appealing and adaptable web interfaces using Bootstrap for
+              seamless user experiences.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="skill-card">
-            <h4><i class="fab fa-git"></i> Effective Collaboration with Git</h4>
-            <p>Collaborate efficiently using Git and version control systems to track and manage code changes in team projects.</p>
+            <h4><i class="fab fa-git" style="color: #F05032;"></i>
+
+              Effective Collaboration with Git</h4>
+            <p class="animated-text">Collaborate efficiently using Git and version control systems to track and manage
+              code changes in team projects.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
 
 
 
@@ -149,200 +178,290 @@
   <section id="about" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
     <div class="container  ">
       <h1 style="color: #ff5500;">About Me</h1>
-      <p>Welcome to my world, where I specialize in web application development. I have a strong passion for problem-solving and enjoy finding smart solutions to complex challenges.</p>
-      <p>As a Full Stack Developer, I love tackling new obstacles. Whether it's creating captivating websites or diving into the realm of web application development, I immerse myself in the process of turning ideas into reality.</p>
-      <p>I am always eager to learn and grow, continuously expanding my skills in web development. With each project I take on, I bring a combination of technical expertise, meticulous attention to detail, and a dedication to creating user-friendly experiences.</p>
-      <p>If you are looking for a motivated and versatile professional who can handle the intricacies of web development, I would be thrilled to collaborate with you. Let's embark on a journey of innovation and success together.</p>
+      <p>Welcome to my world, where I specialize in web application development. I have a strong passion for
+        problem-solving and enjoy finding smart solutions to complex challenges.</p>
+      <p>As a Full Stack Developer, I love tackling new obstacles. Whether it's creating captivating websites or diving
+        into the realm of web application development, I immerse myself in the process of turning ideas into reality.
+      </p>
+      <p>I am always eager to learn and grow, continuously expanding my skills in web development. With each project I
+        take on, I bring a combination of technical expertise, meticulous attention to detail, and a dedication to
+        creating user-friendly experiences.</p>
+      <p>If you are looking for a motivated and versatile professional who can handle the intricacies of web
+        development, I would be thrilled to collaborate with you. Let's embark on a journey of innovation and success
+        together.</p>
     </div>
   </section>
-  
 
-</style>
 
-<section id="portfolio" class="portfolio-section" style="color: #ff5500;" >
-  <div class="container col-lg-4 col-md-6 mb-4">
-    <h1 class="section-heading">Portfolio</h1>
-  </div>
+  </style>
 
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card mb-4" order="1">
-        <img src="tinDog.png" alt="Image 1" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title"><a href="https://github.com/mehdiManz/tinDog" target="_blank"> tinDog</a> </h3>
-          
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card mb-4" order="2">
-        <img src="Screenshot 2023-06-30 123842.png" alt="Image 2" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title"><a href="https://github.com/mehdiManz/drum-kit" target="_blank">   Drum Kit </a></h3>
-         
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card mb-4" order="3">
-        <img src="Screenshot 2023-06-30 125516.png" alt="Image 3" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title"> <a href="https://github.com/mehdiManz/my-todo-list" target="_blank">My Todo List</a> </h3>
-          <p class="card-text"></p>
-        </div>
-      </div>
+  <section id="portfolio" class="portfolio-section" style="color: #ff5500;">
+    <div class="container col-lg-4 col-md-6 mb-4">
+      <h1 class="section-heading">Portfolio</h1>
     </div>
 
-    <div class="col-md-4">
-      <div class="card mb-4" order="4">
-        <img src="Screenshot 2023-07-01 140748.png" alt="Image 4" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title"><a href="https://github.com/mehdiManz/weather-forecast-express" target="_blank">Weather Forecast with Express</a> </h3>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card mb-4" order="5">
-        <img src="Screenshot 2023-07-01 133912.png" alt="Image 5" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title"> <a href="https://github.com/mehdiManz/react-emoji" target="_blank">React Emoji</a></h3>
-         
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card mb-4" order="6">
-        <img src="Screenshot 2023-07-01 133535.png" alt="Image 6" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title"> <a href="https://github.com/mehdiManz/react-prop" target="_blank"> React Props</a></h3>
-       
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col-md-4">
-      <div class="card mb-4" order="7">
-        <img src="Screenshot 2023-07-01 084307.png" alt="Image 7" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title"> <a href="https://github.com/mehdiManz/daily-journal" target="_blank">Daily Journal</a> </h3>
-        
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card mb-4" order="8">
-        <img src="Screenshot 2023-06-30 132426.png" alt="Image 8" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title"> <a href="https://github.com/mehdiManz/dice-challenge" target="_blank">Dice Challenge</a> </h3>
-         
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card mb-4" order="9">
-        <img src="Screenshot 2023-06-30 132222.png" alt="Image 9" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title"><a href="https://github.com/mehdiManz/pin-bar-prophet" target="_blank">Forex Prophet Pin Bar Detector</a> </h3>
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card mb-4" order="10">
-        <img src="Screenshot 2023-06-30 131619.png" alt="Image 10" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title"> <a href="https://github.com/mehdiManz/Newsletter-Signup" target="_blank">Newsletter Signup</a></h3>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card mb-4" order="11">
-        <img src="Screenshot 2023-06-30 130328.png" alt="Image 11" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title"><a href="https://github.com/mehdiManz/todo-mongoose" target="_blank">Todo App with Mongoose</a> </h3>
-         
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col-md-12">
-      <div class="card mb-4">
-        <div class="card-body">
-          <h3 class="card-title">More Projects on GitHub</h3>
-          <p class="card-text">Check out my GitHub profile for a complete list of projects and repositories.</p>
-          <a href="https://github.com/mehdiManz" target="_blank" class="btn btn-primary">View GitHub Profile</a>
-        </div>
-      </div>
-    </div>
-
-
-    
-    <!-- Add the remaining card elements with appropriate order values -->
-  </div>
-  
-
-
-</section>
-
-  
-  
-  
-
-<section id="contact" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <div class="container col-lg-8 col-lg-4 col-md-6 mb-4">
-
-    <h1>Contact Me</h1>
-    <p>Thank you for your interest! I would be delighted to connect with you and discuss your project. Feel free to reach out to me using the contact details provided below or by filling out the contact form.</p>
     <div class="row">
-      <div class="col-lg-6">
-        <h4>Contact Information</h4>
-        <p><strong>Email:</strong> mehdimaanz@gmail.com <i class="fas fa-envelope"></i></p>
-        <p><strong>Phone:</strong> +1 778 323 8153 <i class="fas fa-phone"></i></p>
-        <p><strong>Location:</strong> Surrey, BC, Canada <i class="fas fa-map-marker-alt"></i></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mehdi-abdolnabi-zadeh-92497939/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/mehdiManz" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" style="color: #000;"></i></a></p>
+      <div class="col-md-4">
+        <div class="card mb-4" order="1">
+          <img src="tinDog.png" alt="Image 1" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"> <a href="https://github.com/mehdiManz/tinDog" target="_blank"
+                data-bs-toggle="tooltip" data-bs-placement="top"
+                title="A responsive web application for connecting dog owners">tinDog</a>
 
+            </h3>
+
+          </div>
+        </div>
       </div>
-      <div class="col-lg-6">
-        <h4>Send a Message</h4>
-        <form action="https://formsubmit.co/mehdimaanz@gmail.com" method="POST" class="contact-form">
-          <div class="mb-3">
-            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+      <div class="col-md-4">
+        <div class="card mb-4" order="2">
+          <img src="Screenshot 2023-06-30 123842.png" alt="Image 2" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"> <a href="https://github.com/mehdiManz/drum-kit" target="_blank"
+                data-bs-toggle="tooltip" data-bs-placement="top"
+                title="An interactive virtual drum kit built with JavaScript">Drum Kit</a></h3>
+
           </div>
-          <div class="mb-3">
-            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-4">
+        <div class="card mb-4" order="3">
+          <img src="Screenshot 2023-07-03 104803.png" alt="Image 3" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"> <a href="https://github.com/mehdiManz/youtube-clone" target="_blank"
+                data-bs-toggle="tooltip" data-bs-placement="top" title="A YouTube clone web application">YouTube
+                Project</a>
+
+              <p class="card-text"></p>
           </div>
-          <div class="mb-3">
-            <textarea class="form-control" rows="5" name="message" placeholder="Your Message" required></textarea>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="col-md-4">
+        <div class="card mb-4" order="4">
+          <img src="Screenshot 2023-07-01 140748.png" alt="Image 4" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"><a href="https://github.com/mehdiManz/weather-forecast-express" target="_blank"
+                data-bs-toggle="tooltip" data-bs-placement="top"
+                title="A weather forecast web application built with Express">Weather Forecast with Express</a>
+            </h3>
+            <p class="card-text"></p>
           </div>
-          <button type="submit" class="btn btn-primary btn-lg">
-            Send Message
-          </button>
-        </form>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4" order="5">
+          <img src="Screenshot 2023-07-01 133912.png" alt="Image 5" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"> <a href="https://github.com/mehdiManz/react-emoji" target="_blank"
+                data-bs-toggle="tooltip" data-bs-placement="top"
+                title="A React component library for displaying emojis">React Emoji</a>
+            </h3>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4" order="6">
+          <img src="Screenshot 2023-07-01 133535.png" alt="Image 6" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"> <a href="https://github.com/mehdiManz/react-prop" target="_blank"
+                data-bs-toggle="tooltip" data-bs-placement="top"
+                title="A project showcasing the usage of props in React">React Props</a>
+            </h3>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card mb-4" order="7">
+          <img src="Screenshot 2023-07-01 084307.png" alt="Image 7" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"><a href="https://github.com/mehdiManz/daily-journal" target="_blank"
+                data-bs-toggle="tooltip" data-bs-placement="top" title="A daily journal web application">Daily
+                Journal</a>
+            </h3>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4" order="8">
+          <img src="Screenshot 2023-06-30 132426.png" alt="Image 8" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"> <a href="https://github.com/mehdiManz/dice-challenge" target="_blank"
+                data-bs-toggle="tooltip" data-bs-placement="top" title="A dice rolling game challenge">Dice
+                Challenge</a>
+            </h3>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4" order="9">
+          <img src="Screenshot 2023-06-30 132222.png" alt="Image 9" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"><a href="https://github.com/mehdiManz/pin-bar-prophet" target="_blank"
+                data-bs-toggle="tooltip" data-bs-placement="top"
+                title="A Forex trading tool for detecting pin bar patterns">Forex Prophet Pin Bar Detector</a>
+            </h3>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4" order="10">
+          <img src="Screenshot 2023-06-30 131619.png" alt="Image 10" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"> <a href="https://github.com/mehdiManz/Newsletter-Signup" target="_blank"
+                data-bs-toggle="tooltip" data-bs-placement="top"
+                title="A newsletter signup form for capturing user information">Newsletter Signup</a>
+            </h3>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4" order="11">
+          <img src="Screenshot 2023-06-30 130328.png" alt="Image 11" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"><a href="https://github.com/mehdiManz/todo-mongoose" target="_blank"
+                data-bs-toggle="tooltip" data-bs-placement="top" title="A Todo application built with Mongoose">Todo App
+                with Mongoose</a>
+            </h3>
+
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card mb-4" order="12">
+          <img src="Screenshot 2023-07-17 152417.png" alt="Image 12" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"><a href="https://github.com/mehdiManz/Guess-My-Number" target="_blank"
+                data-bs-toggle="tooltip" data-bs-placement="top" title="A simple 'Guess My Number' game implemented in JavaScrip">Guess My Number Game
+                </a>
+            </h3>
+
+          </div>
+        </div>
+      </div>
+      
+
+
+
+
+
+      <div class="col-md-4">
+        <div class="card mb-4" order="12">
+          <img src="Screenshot 2023-06-30 125516.png" alt="Image 12" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title"> <a href="https://github.com/mehdiManz/static-todo-list" target="_blank"
+                data-bs-toggle="tooltip" data-bs-placement="top" title="A simple static Todo List application">My Todo
+                List</a>
+            </h3>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="col-md-12">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="card-title" style="color:rgb(13, 110, 253) ;">More Projects on GitHub</h3>
+            <p class="card-text">Check out my GitHub profile for a complete list of projects and repositories.</p>
+            <a href="https://github.com/mehdiManz?tab=repositories" target="_blank" class="btn btn-primary">View GitHub
+              Profile</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- Add the remaining card elements with appropriate order values -->
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+  <section id="contact" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div class="container col-lg-8 col-md-6 mb-4">
+
+      <h1>Contact Me</h1>
+      <p>Thank you for your interest! I would be delighted to connect with you and discuss your project. Feel free to
+        reach out to me using the contact details provided below or by filling out the contact form.</p>
+      <div class="row">
+        <div class="col-lg-6">
+          <h4>Contact Information</h4>
+          <p><strong>Email:</strong> mehdimaanz@gmail.com <i class="fas fa-envelope"></i></p>
+          <p><strong>Phone:</strong> +1 778 323 8153 <i class="fas fa-phone"></i></p>
+          <p><strong>Location:</strong> Surrey, BC, Canada <i class="fas fa-map-marker-alt"></i></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mehdi-abdolnabi-zadeh-92497939/"
+              target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/mehdiManz" target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-github" style="color: #000;"></i></a></p>
+
+        </div>
+        <div class="col-lg-6">
+          <h4>Send a Message</h4>
+          <form id="contactForm" action="#" method="POST" class="contact-form">
+            <div class="mb-3">
+              <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
-<footer class="footer" style="background-color: #009688;">
-  <div class="container text-center">
-    <p style="color: #fff; font-size: 16px; margin-bottom: 0;">&copy; <span class="footer-year"></span></p>
-    <p style="color: #fff; font-size: 14px; margin-top: 5px;">Coded and Designed by MehdiManz</p>
-  </div>
-</footer>
+
+  <footer class="footer" style="background-color: #009688;">
+    <div class="container text-center">
+      <p style="color: #fff; font-size: 16px; margin-bottom: 0;">&copy; <span class="footer-year"></span></p>
+      <p style="color: #fff; font-size: 14px; margin-top: 5px;">Coded and Designed by MehdiManz</p>
+    </div>
+  </footer>
 
 
 
@@ -353,4 +472,5 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </body>
+
 </html>
