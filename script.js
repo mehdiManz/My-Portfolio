@@ -7,6 +7,7 @@ $(document).ready(function() {
       smoothScroll(target);
     }
   });
+  
 
   // Smooth scrolling animation for #my-name link
   $('#my-name > div > div > div > a').on('click', function(event) {
